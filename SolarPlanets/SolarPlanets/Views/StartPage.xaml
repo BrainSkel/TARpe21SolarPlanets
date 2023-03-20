@@ -4,6 +4,104 @@
              x:Class="SolarPlanets.Views.StartPage"
              Title="StartPage">
     <Grid>
+        <Image
+            x:Name="imgEarth"
+            Opacity="0"
+            Source="earth.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="-48"
+            TranslationY="148"
+            WidthRequest="96"
+            HeightRequest="96">
+        </Image>
+
+        <Image
+            x:Name="imgJupiter"
+            Opacity="0"
+            Source="jupiter.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="-100"
+            TranslationY="220"
+            WidthRequest="200"
+            HeightRequest="200">
+        </Image>
+
+        <Image
+            x:Name="imgSaturn"
+            Opacity="0"
+            Source="saturn.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="32"
+            TranslationY="76"
+            WidthRequest="300"
+            HeightRequest="300
+            ">
+        </Image>
+        <Image
+            x:Name="imgMars"
+            Opacity="0"
+            Source="mars.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="32"
+            TranslationY="76"
+            WidthRequest="300"
+            HeightRequest="300
+            ">
+        </Image>
+        <Image
+            x:Name="imgMercury"
+            Opacity="0"
+            Source="mercury.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="32"
+            TranslationY="76"
+            WidthRequest="300"
+            HeightRequest="300
+            ">
+        </Image>
+        <Image
+            x:Name="imgVenus"
+            Opacity="0"
+            Source="venus.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="84"
+            TranslationY="288"
+            WidthRequest="76"
+            HeightRequest="76
+            ">
+        </Image>
+        <Image
+            x:Name="imgUranus"
+            Opacity="0"
+            Source="uranus.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="100"
+            TranslationY="-72"
+            WidthRequest="200"
+            HeightRequest="200
+            ">
+        </Image>
+        <Image
+            x:Name="imgNeptune"
+            Opacity="0"
+            Source="neptune.svg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="32"
+            TranslationY="76"
+            WidthRequest="300"
+            HeightRequest="300
+            ">
+        </Image>
+
+
 
         <Border
             x:Name="frmInto"
