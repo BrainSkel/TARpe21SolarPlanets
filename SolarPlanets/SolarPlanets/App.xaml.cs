@@ -1,6 +1,7 @@
 ﻿#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
+using SolarPlanets.Views;
 using Windows.Graphics;
 #endif
 
@@ -31,6 +32,6 @@ public partial class App : Application
 
 
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new StartPage());
 	}
 }
