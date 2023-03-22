@@ -43,6 +43,12 @@
         <Setter Property="FontSize" Value="32"></Setter>
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}"></Setter>
     </Style>
+    
+    
+    <Style TargetType="Label" x:Key="MenuLabelStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
+        <Setter Property="FontSize" Value="14"></Setter>
+        <Setter Property="TextColor" Value="#CCCCCC"></Setter>
+    </Style>
 
 
 
