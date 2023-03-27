@@ -45,11 +45,11 @@
                     HorizontalOptions="End"
                     Spacing="20">
 
-                <Label
+                <!--<Label
                     Text="Menu"
                     Style="{StaticResource PageHeaderStyle}"
                     HorizontalOptions="End">
-                    
+
                 </Label>
 
                 <Label
@@ -81,11 +81,47 @@
                     Text="Option 6 (WITH ICON)"
                     Style="{StaticResource PageHeaderSubtitleStyle}"
                     HorizontalOptions="End"
-                    ></Label>
-                
+                    ></Label>-->
+
             </VerticalStackLayout>
+            
+            <!-- Api main Picture -->
+
+            <Border
+                WidthRequest="56"
+                HeightRequest="56"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                StrokeThickness="6"
+                Grid.Row="0"
+                Grid.Column="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="28">
+                        
+                    </RoundRectangle>
+                </Border.StrokeShape>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ProfilePicture_Clicked"></TapGestureRecognizer>
+                </Border.GestureRecognizers>
+
+                <Image
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Source="planetsApi.png">
+                    <Image.Clip>
+                        <EllipseGeometry
+                            Center="25,25"
+                            RadiusX="25"
+                            RadiusY="25"></EllipseGeometry>
+                    </Image.Clip>
+                    
+                </Image>
+            </Border>
+            
         </Grid>
-        
+
         <!--Main Content-->
 
         <Grid
@@ -127,6 +163,7 @@
                         VerticalOptions="Center"
                         ColumnDefinitions="Auto,*"
                         ColumnSpacing="16">
+
                         <Image
                             WidthRequest="18"
                             HeightRequest="18"
@@ -149,6 +186,80 @@
                 </Border>
             </VerticalStackLayout>
         </ScrollView>
+
+        <Border
+            Padding="16,0"
+            BackgroundColor="#393965"
+            Stroke="{StaticResource BorderColor}"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            >
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="45"></RoundRectangle>
+            </Border.StrokeShape>
+
+            <Grid
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                RowDefinitions="Auto,Auto"
+                ColumnDefinitions="*,*,*"
+                RowSpacing="6">
+
+                <Image
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="imgexplore.png"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="Center"
+                    >
+                    
+                    
+                </Image>
+                <Label
+                    >
+                    
+                </Label>
+
+                <Image
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="imgfavorite.png"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    ></Image>
+
+                <Label
+                    Text="Favorite"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource MenuLabelStyle}">
+                    
+                </Label>
+
+                <Image
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="imgporifle.png"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalOptions="Center"></Image>
+
+                <Label
+                    Text="Profile"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource MenuLabelStyle}"
+                    ></Label>
+
+
+            </Grid>
+        </Border>
 
         
     </Grid>

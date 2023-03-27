@@ -1,4 +1,6 @@
+using SolarPlanets.Services;
 namespace SolarPlanets.Views;
+
 
 public partial class PlanetsPage : ContentPage
 {
@@ -6,6 +8,13 @@ public partial class PlanetsPage : ContentPage
 	public PlanetsPage()
 	{
 		InitializeComponent();
+
+		lstPopularPlanets.ItemSource = PlanetsService.GetFeaturedPlanets();
+	}
+
+	async void Planets_SelectionChanged(System.Object sender, SelectionChangedEventArgs e)
+	{
+
 	}
 
 	async void GridArea_Tapped(System.Object sender, System.EventArgs e)
@@ -20,4 +29,13 @@ public partial class PlanetsPage : ContentPage
         _ = MenuContainer.ScaleTo(1, AnimationDuration);
 		await MenuContainer.TranslateTo(0, 0, AnimationDuration);
     }
+
+
+	async void ProfilePicture_Clicked(System.Object sender, System.EventArgs e)
+	{
+		_= MainContentGrid.TranslateTo(-this.Width * 0.5, this.Height * 0.1, AnimationDuration, Easing.CubicIn);
+		await MainContentGrid.ScaleTo(0.8, AnimationDuration);
+		_= MainContentGrid.FadeTo(0.8, AnimationDuration);
+	}
 }
+
